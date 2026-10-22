@@ -18,8 +18,8 @@
     },
     {
       "path": "NOTES.md",
-      "bytes": 27288,
-      "sha256": "be40a78a7bb323ba77175f4d0bc2d963c11493351cd47bbd7d550d70e8967c14"
+      "bytes": 27512,
+      "sha256": "e07107f425ece67863ef3e2624ed7bef987e56ceb664f18928f8a38717ab77dd"
     },
     {
       "path": "README.md",
@@ -418,8 +418,8 @@
     },
     {
       "path": "src/test/copy.test.ts",
-      "bytes": 1912,
-      "sha256": "8725de2d0c64c7de8b0abc424bfb1c5db2dce71b20224968a27e9768932e1146"
+      "bytes": 14962,
+      "sha256": "e657745a33018864973bad6e41cbc8ad13d31777a65ddc903ac5c7d8a7b79acf"
     },
     {
       "path": "src/test/cp3Fixtures.ts",

@@ -390,3 +390,6 @@ majors, as explicitly required by the CP0 task.
 
 
 
+
+- 2026-10-22: Release tests are self-contained. copy.test.ts keeps a fixed snapshot of the specified UI copy; the public repository does not depend on assignment-only prototype-docs files. All existing assertions remain.
+
