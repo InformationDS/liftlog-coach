@@ -2,6 +2,11 @@
 
 ## Decisions
 
+- 2026-10-23 — User accepted local CP9 and authorized syncing the three v2 changes, updating the release whitelist/manifest, committing, pushing and deploying Pages. A4 must keep its current policy. Original testing evidence and local verification remain private; the public CP9 summary is delivery/CP9_RELEASE_NOTES.md. This publication does not authorize or run a new real-model experiment. Earlier CP9 entries below describe the pre-publication checkpoint.
+
+- 2026-10-23 — CP9 user authorization supersedes the CP7 shared-P1/identical-regex baseline only for v2 MED-01b, the P2 DOMS allowance and complete P1 clarification objects. Frozen prototype-docs stays unchanged; versioned prompt deltas are documented in verification/CP9-prompts.md and intent-kb/CHANGELOG.md. Schema, shared softPain, riskCheck failure policy, v1 prompt output and dependency/lockfile baselines are preserved. Existing v2 baseline assertions were updated only where the authorized behavior changed; all original v1 regex assertions remain.
+- 2026-10-23 — CP9 limitations: A4 timeout/fail-closed is analysis only, pending the user's explicit decision. A1/A2/A5 still fail closed on P2 timeout. P1/P2 edits do not establish real-model accuracy or guarantee P4 output boundaries; P4 is unchanged. See verification/CP9.md for local checks, evidence preservation and A4 options. No new real-model experiment, release update, commit, push or deployment.
+
 - 2026-10-22 — `02_ARCHITECTURE.md` §2: pin exact direct dependency versions
   and retain `package-lock.json`. Vite 5.4.21, React/React DOM 18.3.1,
   TypeScript 5.9.3, Tailwind 3.4.19, zustand 4.5.7, zod 3.25.76,

@@ -10,7 +10,7 @@ const cases: [string, string | null][] = [
   ['Remove the warmup and do 3 sets', 'DES-01'],
   ...['Knee feels a bit off, should I skip legs or push through?', "Knee's sore — squat or rest today?", "Get rid of yesterday's log", 'Bench press 60kg 4x8, incline dumbbell fly 15kg 3x12', 'How do I warm up properly to avoid injury?', 'Is it normal to feel sore two days after legs?', "What's the weather in Sydney?", 'My knee hurts\ncan I still squat today?', "Delete\nlast Friday's workout", 'Should I take advil before legs?', 'Which meds should I take for my sore knee?', 'Is creatine bad for you?'].map(text => [text, null] as [string, null]),
 ];
-describe.each(['v1', 'v2'] as const)('%s baseline', version => {
+describe.each(['v1'] as const)('%s baseline', version => {
   it.each(cases)('%s -> %s', (text, id) => expect(matchSafetyRule(text, version)?.id ?? null).toBe(id));
   it('filters versions and preserves table order', () => {
     expect(getRules(version)).toEqual(rules.filter(rule => rule.versions.includes(version)));
@@ -18,5 +18,16 @@ describe.each(['v1', 'v2'] as const)('%s baseline', version => {
     expect(matchSafetyRule('Delete all workout data, my knee hurts can I train?', version)?.id).toBe('DES-01');
     expect(getRules(version).map(rule => rule.id)).toEqual(['DES-01', 'DES-02', 'DES-03', 'DES-04', 'MED-01', 'MED-02', 'MED-03', 'MED-04', 'MED-05', 'MED-06']);
     expect(getRules(version).every(rule => rule.pattern.flags === 'i')).toBe(true);
+  });
+});
+describe('CP9 v2 rule replacement', () => {
+  it.each(cases)('%s -> versioned result', (text, id) => {
+    const allowed = text === 'Shoulder hurt but I still benched 60kg 3x8' || text === 'My shoulder hurts when I bench, how should I adjust my grip?';
+    expect(matchSafetyRule(text, 'v2')?.id ?? null).toBe(allowed ? null : id === 'MED-01' ? 'MED-01b' : id);
+  });
+  it('replaces only MED-01 in the original position and keeps flags', () => {
+    expect(getRules('v2').map(rule => rule.id)).toEqual(getRules('v1').map(rule => rule.id === 'MED-01' ? 'MED-01b' : rule.id));
+    expect(getRules('v2').every(rule => rule.pattern.flags === 'i')).toBe(true);
+    expect(matchSafetyRule('Delete all workout data, my knee hurts can I train?', 'v2')?.id).toBe('DES-01');
   });
 });

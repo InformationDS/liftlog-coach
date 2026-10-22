@@ -35,8 +35,8 @@ describe('§2.12 v2 integration (actual HTTP counts, read-only snapshots)',()=>{
   it('new-message P2 error after a non-slot answer does not restore discarded resume',async()=>{
     const h=setup([pass,q('session_count'),new Response('',{status:401})]);await h.actions.send('How many sessions?');await h.actions.send('A full different question?');expect(last(h).kind).toBe('error');expect(scope(h)).toMatchObject({pendingResume:null,activeClarificationId:null,clarificationCount:0});count(h,3);expect(await h.repo.list()).toEqual([]);
   });
-  it('v2 keeps exact v1 regex false positives and newline misses',async()=>{
-    const h=setup([]);for(const text of ['Shoulder hurt but I still benched 60kg 3x8','My shoulder hurts when I bench, how should I adjust my grip?','Remove the warmup and do 3 sets']){await h.actions.send(text);expect(last(h).trace.aiCalls).toHaveLength(0);expect(last(h).trace.safetyRuleHit).not.toBeNull();}
+  it('v2 keeps the unauthorized DES false positive and newline misses',async()=>{
+    const h=setup([]);for(const text of ['Remove the warmup and do 3 sets']){await h.actions.send(text);expect(last(h).trace.aiCalls).toHaveLength(0);expect(last(h).trace.safetyRuleHit).not.toBeNull();}
     h.queue.push(pass,u('out_of_scope'));await h.actions.send("Delete\nlast Friday's workout");expect(last(h).trace.path[0]).toBe('safety_regex: miss');count(h,2);expect(await h.repo.list()).toEqual([]);
   });
   it('complete record, clarification continuation and pending draft only sent to P1',async()=>{

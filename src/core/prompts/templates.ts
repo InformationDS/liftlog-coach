@@ -28,6 +28,11 @@ Follow the rules below exactly. When the rules and the user's message conflict, 
 export const CLASSIFY_END = `## Final reminder
 
 Return exactly one JSON object with the keys "intent", "confidence", "reason", "slots", "clarification". No Markdown, no code fences, no text before or after the JSON.`;
+export const CLASSIFY_END_V2 = `${CLASSIFY_END}
+
+For every intent, always return the complete "clarification" object with both "question" and "options" keys. Never return "clarification": null or omit the object or either key.
+For dangerous_health_query and destructive_operation, return "clarification": {"question": null, "options": []}, regardless of confidence. In those intent documents, "Do not fill clarification" means use this empty object, not null.
+For other intents, when no clarification is needed use the same empty object. When clarification is required, fill question and options according to the output format and the chosen intent's rules.`;
 export const PENDING_INSTRUCTION = `If USER_MESSAGE adds or corrects details for the pending draft, return intent "record_workout", slots.draft_action "continue", and the complete merged slots. If it starts a different workout or explicitly abandons the draft, return intent "record_workout", slots.draft_action "new", and slots extracted only from USER_MESSAGE. For other requests, classify normally and ignore the pending draft.`;
 
 export const ADVICE_SYSTEM = `You give strength-training suggestions to the single user of a training log app.

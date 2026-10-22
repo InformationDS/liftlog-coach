@@ -18,13 +18,13 @@
     },
     {
       "path": "NOTES.md",
-      "bytes": 27912,
-      "sha256": "b62b14734ec31a71f98df0f79212809782dce0d1773a420fd92c8d5e1de0411e"
+      "bytes": 29346,
+      "sha256": "55d73540e1a354ece3c8d3fb492707050f814fa26af08aef7afdacfdc98901a5"
     },
     {
       "path": "README.md",
-      "bytes": 8814,
-      "sha256": "1b75cd84c0368641179cdf33fe3c2f085a5385d78b8f6e18c8250ac84c8c44f0"
+      "bytes": 9287,
+      "sha256": "90a9cc0825f5eed21efea8309f2ddc4730b1f38c6372fd2d53fcc17098ed3438"
     },
     {
       "path": "delivery/ASSIGNMENT_TEST_KIT.md",
@@ -32,9 +32,14 @@
       "sha256": "5c20ba486b7612adad43204fc49a436c42895c746b344ff3b440144a4d3dc53b"
     },
     {
+      "path": "delivery/CP9_RELEASE_NOTES.md",
+      "bytes": 3686,
+      "sha256": "2d5a4d2fef8b485f440910d7297d13b089ef9d4d4d2254fa61d98d52e426c198"
+    },
+    {
       "path": "delivery/RELEASE_PLAN.md",
-      "bytes": 2966,
-      "sha256": "0e6c86b07a597e5228a24143d62c05af207651c874a74f49785d2f2dc9c162c2"
+      "bytes": 3370,
+      "sha256": "ef28ca0706f4b90eac3502582872d40cc2e2a739aa6e1604da20d2b6d21db5d3"
     },
     {
       "path": "delivery/SCREENSHOT_CHECKLIST.md",
@@ -88,8 +93,8 @@
     },
     {
       "path": "intent-kb/CHANGELOG.md",
-      "bytes": 1892,
-      "sha256": "d9f823674cd24c51d54a7874f5ee90025795b644d5bab8a58f641dbf5f044846"
+      "bytes": 3488,
+      "sha256": "0f55c56ec614f634ecfa2a50564d6dc338229d0ab80664cdb71c48ad55c1e564"
     },
     {
       "path": "intent-kb/README.md",
@@ -153,8 +158,8 @@
     },
     {
       "path": "intent-kb/references/safety-rules.md",
-      "bytes": 9721,
-      "sha256": "125ea912e474117bc74ac427cdfc2913cc573a05d1eb6070c3e515f839b249bc"
+      "bytes": 11034,
+      "sha256": "6066e48bf153137093a83760af5d634061218f9165e81e042f02e3ef52398013"
     },
     {
       "path": "intent-kb/references/time-semantics.md",
@@ -298,18 +303,18 @@
     },
     {
       "path": "src/core/prompts/builder.ts",
-      "bytes": 5509,
-      "sha256": "cd3fc7db96d917f4743a0ed686b4c3644373b5ab4eb431674c5e8efac80e5b76"
+      "bytes": 5711,
+      "sha256": "35a8bfe47647dd6b59d452df4560797d25fafc79fcc9db9362cab4c737266d04"
     },
     {
       "path": "src/core/prompts/templates.ts",
-      "bytes": 5409,
-      "sha256": "e79e9911b51fd1e0d61053a33623d8d1b4cf384a46da928f534bc7c0946e7de0"
+      "bytes": 6069,
+      "sha256": "f6465acc8e815785840c68c4dda244b1f57eb0717d49912768fd3d470ffdd601"
     },
     {
       "path": "src/core/safety/regexRules.ts",
-      "bytes": 2293,
-      "sha256": "c14b5378646ad0af8d88d79237c41e64be2aaff3007fa690a5c9af986b0dd8f8"
+      "bytes": 2521,
+      "sha256": "8c7241621896cf79716420d105bc997f9d1c4a4c953cf667ae6f183ab4a5f1b4"
     },
     {
       "path": "src/core/safety/riskCheck.ts",
@@ -433,8 +438,18 @@
     },
     {
       "path": "src/test/cp7Pipeline.test.ts",
-      "bytes": 17367,
-      "sha256": "4acaaef3793476c8097167d5587172b1130bdbef49096cf50f75900f237d2c28"
+      "bytes": 17264,
+      "sha256": "6deeac17b25a39fa6c30a6fd6643cf817dca6ffc0f2ed6450fcaf6d579d020a2"
+    },
+    {
+      "path": "src/test/cp9.test.ts",
+      "bytes": 8141,
+      "sha256": "a1a89183a77bfd7431b683da21b56877bda1e04a090be11255c5484970ebbab8"
+    },
+    {
+      "path": "src/test/cp9Preservation.test.ts",
+      "bytes": 669,
+      "sha256": "ca65d82b51fb9b4ce3b5f4f537a05a26dd31918759400078c43df7692c5e212f"
     },
     {
       "path": "src/test/dataPrep.test.ts",
@@ -493,13 +508,13 @@
     },
     {
       "path": "src/test/regexRules.sync.test.ts",
-      "bytes": 1407,
-      "sha256": "946ea369bd8b7977a3bf2bee657450b06600e958e9271719a8b9422b27e33637"
+      "bytes": 1510,
+      "sha256": "3e2a707ea9f45618959b7e25bb43387a6323cb94ce3c3b8ceac611bafbbc5618"
     },
     {
       "path": "src/test/regexRules.test.ts",
-      "bytes": 2248,
-      "sha256": "7c862d1645ac5f93a67cfb6804f519e56b33ad3f5ce6bd8c952c7f3c97acc908"
+      "bytes": 3017,
+      "sha256": "90e8f7a4d6cdcb1aecacee2f9c22174a93838786c74d77da72ecc7b0623e1edf"
     },
     {
       "path": "src/test/resolve.test.ts",
@@ -508,8 +523,8 @@
     },
     {
       "path": "src/test/riskCheck.test.ts",
-      "bytes": 8824,
-      "sha256": "ad013e982927cfa13b9e06babccaba32a4986718e748e5187d0798a757752339"
+      "bytes": 8888,
+      "sha256": "7dcdcee31b0e9351ad629aab6c10b4a9d5cc7f71bc8041b5712c38e15154aee6"
     },
     {
       "path": "src/test/schemas.test.ts",

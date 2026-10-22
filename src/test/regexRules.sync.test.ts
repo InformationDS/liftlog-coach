@@ -21,6 +21,8 @@ it('syncs both tables including IDs, categories, patterns, order and versions', 
   const v1 = parse(md.split('### 1.1')[1].split('### 1.2')[0]);
   const v2 = parse(md.split('### 1.2')[1].split('### 1.3')[0]);
   expect(v1).toHaveLength(10);
-  for (const version of ['v1', 'v2'] as const) expect(getRules(version).map(rule => ({id: rule.id, category: rule.category, pattern: rule.pattern.source}))).toEqual(version === 'v1' ? v1 : [...v1, ...v2]);
+  expect(v2).toHaveLength(1);
+  expect(v2[0].id).toBe('MED-01b');
+  for (const version of ['v1', 'v2'] as const) expect(getRules(version).map(rule => ({id: rule.id, category: rule.category, pattern: rule.pattern.source}))).toEqual(version === 'v1' ? v1 : v1.map(rule => rule.id === 'MED-01' ? v2[0] : rule));
 });
 it('parses DES-01 into exactly four columns', () => expect(cells(md.split('\n').find(line => line.startsWith('| `DES-01`'))!)).toHaveLength(4));

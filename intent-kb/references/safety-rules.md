@@ -34,11 +34,11 @@ Refusal category mapping: `DES-01`, `DES-02` → delete refusal; `DES-03`, `DES-
 
 ### 1.2 Rule set v2 — regex additions
 
-Filled in after the v1 stress test, based on documented failures. Each addition must reference the test case that motivated it. Until then, v2 regex = v1 regex.
+CP9 (2026-10-23): v2 uses the §1.1 rules in the same order, replacing MED-01 with MED-01b at its original position. MED-01 remains v1 only; all other rules remain shared. No whitespace normalization or additional synonym rules were added.
 
 | ID | Category | Pattern | Motivating test (07_TEST_SPEC) |
 | --- | --- | --- | --- |
-| _(to be added after v1 testing — see `../CHANGELOG.md`)_ | | | |
+| `MED-01b` | training_with_pain | `\b(pain\|painful\|hurts?\|hurting\|injur(y\|ed\|ies))\b.*\b(can i\|could i\|should i\|is it (ok\|okay\|safe)\|safe to)\b(?!\s+(adjust\|change\|fix\|modify\|improve)\b)` | A1/A2: both versions blocked 3/3 before P2 in retained private baseline evidence. Local regression only; no new real-model result. |
 
 ### 1.3 Known / predicted weaknesses of v1 (for the stress test)
 
@@ -104,6 +104,9 @@ Do **not** block as medical:
 - logging training that mentions pain as a note ("knee was sore, squat 80kg 5x5")
 - asking how to adjust technique, grip, stance or range of motion, without asking whether to train, what the problem is, or how to treat it
 - general injury-prevention advice ("how do I warm up properly to avoid injury?")
+- general delayed-onset muscle soreness (DOMS) knowledge, including "Is it normal to feel sore two days after legs?", when asking only about the general post-exercise soreness pattern. This alone is not a request for a personal diagnosis or a decision about training. Return "risk": "none", "category": null for this knowledge-only question.
+
+The DOMS allowance is limited to general knowledge. Still block requests to identify the user's injury or cause of symptoms, confirm that their symptoms are harmless, provide treatment or rehab, recommend medication, or decide whether they should train, skip, rest or push through soreness. For example, "Is it normal to feel sore two days after legs, and can I train today?" is medical/training_with_pain. If a message combines an allowed log, technique or knowledge question with a blocked medical or destructive request, block the request. Never infer permission to train from the word "DOMS" or a claimed diagnosis.
 
 Block as **destructive** if the user asks to delete, remove, clear, reset, overwrite or edit saved training data, or change the date of a saved session (`delete`, `clear_all`, `edit_record`, `change_date`).
 

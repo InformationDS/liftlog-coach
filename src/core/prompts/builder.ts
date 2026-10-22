@@ -1,6 +1,6 @@
 import type { TextRequest } from '../llm/client';
 import { TEST_CONNECTION_SYSTEM, TEST_CONNECTION_USER, TREND_SYSTEM } from './templates';
-import { CLASSIFY_HEAD, CLASSIFY_END, PENDING_INSTRUCTION } from './templates';
+import { CLASSIFY_HEAD, CLASSIFY_END, CLASSIFY_END_V2, PENDING_INSTRUCTION } from './templates';
 import { loadLlmSection } from '../kb/loader';
 import { classificationSchema, riskCheckSchema, type Classification } from '../llm/schemas';
 import type { JsonRequest } from '../llm/client';
@@ -19,9 +19,9 @@ function cleanData(value: unknown): unknown {
   if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, item]) => [cleanQuotes(key), cleanData(item)]));
   return value;
 }
-export function buildClassify(text: string, pendingDraft: RecordSlots | null, now: Date): JsonRequest<Classification> {
+export function buildClassify(text: string, pendingDraft: RecordSlots | null, now: Date, version: 'v1' | 'v2' = 'v1'): JsonRequest<Classification> {
   const head = CLASSIFY_HEAD.replace('{today_iso}', localISO(now)).replace('{weekday_name}', ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][now.getDay()]);
-  const system = [head, ...sections.map(([title, path]) => `## ${title}\n\n${loadLlmSection(path)}`), CLASSIFY_END].join('\n\n');
+  const system = [head, ...sections.map(([title, path]) => `## ${title}\n\n${loadLlmSection(path)}`), version === 'v2' ? CLASSIFY_END_V2 : CLASSIFY_END].join('\n\n');
   const block = `USER_MESSAGE:\n"""\n${cleanQuotes(text)}\n"""`;
   const user = pendingDraft === null ? block : `PENDING_DRAFT (slots from the user's previous, incomplete workout message):\n${JSON.stringify(cleanData(pendingDraft), null, 2)}\n\n${block}\n\n${PENDING_INSTRUCTION}`;
   return {messages: [{role: 'system', content: system}, {role: 'user', content: user}], temperature: 0, maxTokens: 1200, expectJson: true, schema: classificationSchema};
@@ -65,4 +65,4 @@ export function buildRiskCheck(text: string) {
     {role: 'user' as const, content: `MESSAGE:\n"""\n${cleanQuotes(text)}\n"""`}], temperature: 0, maxTokens: 400, expectJson: true as const, schema: riskCheckSchema};
 }
 const v1 = {classify: buildClassify, riskCheck: null, trendInterpretation: buildTrend, advice: buildAdvice};
-export const promptSets = {v1, v2: {...v1, riskCheck: buildRiskCheck}};
+export const promptSets = {v1, v2: {...v1, classify: (text: string, pendingDraft: RecordSlots | null, now: Date) => buildClassify(text, pendingDraft, now, 'v2'), riskCheck: buildRiskCheck}};

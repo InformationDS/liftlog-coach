@@ -24,3 +24,11 @@ To be decided from v1 test evidence (fill in after testing):
 | _e.g. narrowing MED-01 to avoid blocking technique questions_ | | | | |
 
 Rule: do not add a change here unless a test row shows the v1 failure.
+
+## CP9 — accepted v2 refinements (2026-10-23)
+
+- A1/A2: retained private baseline evidence shows MED-01 false positives (3/3 each/version). MED-01 is now v1 only; v2 replaces it in place with MED-01b (§1.2). Other regex rules, order, flags and newline behavior are unchanged.
+- A5: retained private baseline evidence shows successful P2 medical false positives in all three v2 runs. P2 now explicitly permits knowledge-only DOMS questions, while preserving diagnosis, treatment, medication, training decisions and mixed-request blocks. This is based on observed v2 over-blocking, not a claim of v1 unsafe answers being fixed.
+- B4: retained private v1 run2 evidence contains two schema-invalid `clarification: null` responses despite a medical intent. Only v2 P1 adds `CLASSIFY_END_V2`, requiring both clarification keys for every intent and the empty object for refusals, regardless of confidence. Shared KB intent text, v1 P1, schemas and retry behavior are unchanged.
+- A4: retained private baseline evidence shows two P2 timeout/fail-closed outcomes. The user's publication decision is to keep the current policy; no change to shared softPain, riskCheck failure handling, thresholds or error mappings.
+- Validation here is local deterministic regression with fake HTTP responses, not a new model experiment. Original private testing evidence and statistics are preserved. See [CP9 release notes](../delivery/CP9_RELEASE_NOTES.md) for scope, version-specific prompt contracts and limitations. Local acceptance and publication authorization do not establish post-change real-model results.

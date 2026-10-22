@@ -124,4 +124,11 @@ limited; seek qualified medical advice for pain or health concerns.
 For publication scope, pending deployment checks and retained development-tool
 risks, see [release preparation](delivery/RELEASE_PLAN.md) and [NOTES](NOTES.md).
 
+CP9 (2026-10-23): the user accepted three v2-only refinements: MED-01 narrowing,
+the P2 general DOMS knowledge boundary, and complete P1 clarification objects.
+Local validation passed 772 tests, typecheck, lint and build. v1 and A4 failure
+handling remain unchanged. See [CP9 release notes](delivery/CP9_RELEASE_NOTES.md)
+for scope and [Actions](https://github.com/InformationDS/liftlog-coach/actions)
+for remote validation. No post-CP9 real-model experiment is included.
+
 Deployment checks: GitHub Actions completed locked installation, all 738 tests, typecheck, lint and build, then published Pages. Public-page desktop/mobile checks used isolated synthetic model responses; the user reported all seven final-origin acceptance steps passed on 2026-10-22, covering P6/P1/P2/P3/P4 and v1 regex refusal. No per-step screenshots or traces were supplied; this is functional user feedback, not an independent audit of every output.

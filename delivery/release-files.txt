@@ -4,6 +4,7 @@
 NOTES.md
 README.md
 delivery/ASSIGNMENT_TEST_KIT.md
+delivery/CP9_RELEASE_NOTES.md
 delivery/RELEASE_PLAN.md
 delivery/SCREENSHOT_CHECKLIST.md
 delivery/release-files.txt
@@ -87,6 +88,8 @@ src/test/copy.test.ts
 src/test/cp3Fixtures.ts
 src/test/cp4Fixtures.ts
 src/test/cp7Pipeline.test.ts
+src/test/cp9.test.ts
+src/test/cp9Preservation.test.ts
 src/test/dataPrep.test.ts
 src/test/exerciseMatcher.test.ts
 src/test/fixtures/llm/.gitkeep
