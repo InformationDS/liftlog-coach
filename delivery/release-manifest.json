@@ -18,13 +18,13 @@
     },
     {
       "path": "NOTES.md",
-      "bytes": 27535,
-      "sha256": "da560fe85a7a278b5e8478ce5f7fc96b904f8673b523213d715488206c576cae"
+      "bytes": 27912,
+      "sha256": "b62b14734ec31a71f98df0f79212809782dce0d1773a420fd92c8d5e1de0411e"
     },
     {
       "path": "README.md",
-      "bytes": 8479,
-      "sha256": "3e7e9dea0d44917468dc69269cd9352c836cc10d8c21127de566568d1f8aa532"
+      "bytes": 8814,
+      "sha256": "1b75cd84c0368641179cdf33fe3c2f085a5385d78b8f6e18c8250ac84c8c44f0"
     },
     {
       "path": "delivery/ASSIGNMENT_TEST_KIT.md",
@@ -33,8 +33,8 @@
     },
     {
       "path": "delivery/RELEASE_PLAN.md",
-      "bytes": 2547,
-      "sha256": "f77a06b96ddea0237cc4df1d2c72f1668854a521eaf4b9ff2d1b20c82215eba1"
+      "bytes": 2966,
+      "sha256": "0e6c86b07a597e5228a24143d62c05af207651c874a74f49785d2f2dc9c162c2"
     },
     {
       "path": "delivery/SCREENSHOT_CHECKLIST.md",

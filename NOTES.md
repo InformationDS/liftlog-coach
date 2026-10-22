@@ -395,3 +395,5 @@ majors, as explicitly required by the CP0 task.
 
 
 - 2026-10-22: Published approved files to https://github.com/InformationDS/liftlog-coach and GitHub Pages at https://informationds.github.io/liftlog-coach/. Remote CI passed 738 tests and all gates. Final-origin MiMo acceptance, formal screenshots and the complete assignment experiment remain pending; isolated browser fixtures do not establish provider compatibility.
+
+- 2026-10-22: User reported all seven final-origin acceptance steps passed at https://informationds.github.io/liftlog-coach/, covering MiMo P6/P1/P2/P3/P4, explicit record save/query and v1 regex refusal. Registered as user functional feedback; no per-case screenshots/traces received. Formal screenshots and the 122-case assignment experiment remain pending; no CP9 changes.

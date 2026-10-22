@@ -86,7 +86,7 @@ functional evidence, not an independent audit of complete responses or request c
 | Provider / model | Page origin | Test connection (P6) | Classification / recording / query | v2 risk (P2) | Trend text (P3) | Advice text (P4) | JSON-mode fallback / truncation; safe error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | MiMo / mimo-v2.6-flash | `http://127.0.0.1:4173` | Passed, user screenshot, 2947 ms | Passed, user feedback | Five functional cases passed, user feedback; no per-case Trace | Passed, user feedback | Five functional checks passed, user feedback | Untested / untested; no failure reported |
-| MiMo / mimo-v2.6-flash | `https://informationds.github.io` | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
+| MiMo / mimo-v2.6-flash | `https://informationds.github.io` | Passed, user feedback | Recording/save/query passed, user feedback | Passed, user feedback | Passed, user feedback including factual checks | Passed, user feedback including factual checks | Untested / untested; no failure reported |
 | OpenAI / gpt-4o-mini | None tested | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
 | Google Gemini / gemini-2.5-flash | None tested | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
 | DeepSeek / deepseek-chat | None tested | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
@@ -124,4 +124,4 @@ limited; seek qualified medical advice for pain or health concerns.
 For publication scope, pending deployment checks and retained development-tool
 risks, see [release preparation](delivery/RELEASE_PLAN.md) and [NOTES](NOTES.md).
 
-Deployment checks: GitHub Actions completed locked installation, all 738 tests, typecheck, lint and build, then published Pages. Public-page desktop/mobile checks used isolated synthetic model responses; real MiMo calls at the published origin remain untested.
+Deployment checks: GitHub Actions completed locked installation, all 738 tests, typecheck, lint and build, then published Pages. Public-page desktop/mobile checks used isolated synthetic model responses; the user reported all seven final-origin acceptance steps passed on 2026-10-22, covering P6/P1/P2/P3/P4 and v1 regex refusal. No per-step screenshots or traces were supplied; this is functional user feedback, not an independent audit of every output.
