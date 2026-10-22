@@ -1,7 +1,7 @@
 # UI 截图准备清单（03_UI_SPEC §8）
 
 CP8A 仅检查可达性。用户在**真实最终页面**完成 4–6 张正式图。
-当前最终 URL 未发布，以下正式截图全为待办。真实 Key 不得出现在图中；
+最终 URL：https://informationds.github.io/liftlog-coach/。以下正式截图仍为待办。真实 Key 不得出现在图中；
 使用独立 profile 与虚构样本，不覆盖原个人训练库。
 
 隔离检查：2026-10-22，1280×1600，Australia/Sydney，固定虚构时钟

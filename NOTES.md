@@ -393,3 +393,5 @@ majors, as explicitly required by the CP0 task.
 
 - 2026-10-22: Release tests are self-contained. copy.test.ts keeps a fixed snapshot of the specified UI copy; the public repository does not depend on assignment-only prototype-docs files. All existing assertions remain.
 
+
+- 2026-10-22: Published approved files to https://github.com/InformationDS/liftlog-coach and GitHub Pages at https://informationds.github.io/liftlog-coach/. Remote CI passed 738 tests and all gates. Final-origin MiMo acceptance, formal screenshots and the complete assignment experiment remain pending; isolated browser fixtures do not establish provider compatibility.

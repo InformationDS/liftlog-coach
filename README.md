@@ -4,7 +4,7 @@ A browser-based strength-training log for the UNSW INFS5706 prototype assignment
 AI prepares drafts and advice; you review and explicitly save records. Training
 statistics are calculated by code from your local records.
 
-**Online app: pending publication — not deployed.** No submission URL is available yet.
+**Online app: [Open LiftLog Coach](https://informationds.github.io/liftlog-coach/)** · [Source code](https://github.com/InformationDS/liftlog-coach)
 
 ## Run locally
 
@@ -86,14 +86,13 @@ functional evidence, not an independent audit of complete responses or request c
 | Provider / model | Page origin | Test connection (P6) | Classification / recording / query | v2 risk (P2) | Trend text (P3) | Advice text (P4) | JSON-mode fallback / truncation; safe error |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | MiMo / mimo-v2.6-flash | `http://127.0.0.1:4173` | Passed, user screenshot, 2947 ms | Passed, user feedback | Five functional cases passed, user feedback; no per-case Trace | Passed, user feedback | Five functional checks passed, user feedback | Untested / untested; no failure reported |
-| MiMo / mimo-v2.6-flash | Final submitted origin: pending | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
+| MiMo / mimo-v2.6-flash | `https://informationds.github.io` | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
 | OpenAI / gpt-4o-mini | None tested | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
 | Google Gemini / gemini-2.5-flash | None tested | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
 | DeepSeek / deepseek-chat | None tested | Untested | Untested | Untested | Untested | Untested | Untested / untested; none collected |
 
 Other presets are optional and untested; they are not required acceptance items.
-No availability or price claim is made for them. Local MiMo passes do not verify
-CORS at a future Pages origin. Automated tests and intercepted model fixtures do
+No availability or price claim is made for them. Local MiMo passes do not verify CORS at the published Pages origin. Automated tests and intercepted model fixtures do
 not establish real-provider compatibility. Real fallback, truncation, recovery and
 the full repeated assignment experiment remain unverified. Use
 [the experiment kit](delivery/ASSIGNMENT_TEST_KIT.md) to collect real evidence.
@@ -124,3 +123,5 @@ limited; seek qualified medical advice for pain or health concerns.
 
 For publication scope, pending deployment checks and retained development-tool
 risks, see [release preparation](delivery/RELEASE_PLAN.md) and [NOTES](NOTES.md).
+
+Deployment checks: GitHub Actions completed locked installation, all 738 tests, typecheck, lint and build, then published Pages. Public-page desktop/mobile checks used isolated synthetic model responses; real MiMo calls at the published origin remain untested.
