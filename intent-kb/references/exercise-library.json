@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "exercises": [
+    { "id": "ex_bench_press", "name": "Barbell Bench Press", "aliases": ["bench", "bench press", "flat bench", "flat bench press", "barbell bench", "bb bench", "bb bench press"], "primary_body_part": "chest", "secondary_body_parts": ["triceps", "shoulders"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_incline_bench_press", "name": "Incline Barbell Bench Press", "aliases": ["incline bench", "incline bench press", "incline barbell press", "incline bb press"], "primary_body_part": "chest", "secondary_body_parts": ["shoulders", "triceps"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_db_bench_press", "name": "Dumbbell Bench Press", "aliases": ["db bench", "db bench press", "dumbbell bench", "dumbbell press", "flat dumbbell press", "flat db press"], "primary_body_part": "chest", "secondary_body_parts": ["triceps", "shoulders"], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_incline_db_press", "name": "Incline Dumbbell Press", "aliases": ["incline db press", "incline dumbbell press", "incline dumbbell bench", "incline db bench"], "primary_body_part": "chest", "secondary_body_parts": ["shoulders", "triceps"], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_db_fly", "name": "Dumbbell Fly", "aliases": ["db fly", "db flye", "db flyes", "dumbbell fly", "dumbbell flye", "dumbbell flyes", "flat fly", "flat db fly"], "primary_body_part": "chest", "secondary_body_parts": [], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_incline_db_fly", "name": "Incline Dumbbell Fly", "aliases": ["incline fly", "incline flye", "incline flyes", "incline db fly", "incline dumbbell fly", "incline dumbbell flyes"], "primary_body_part": "chest", "secondary_body_parts": ["shoulders"], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_cable_fly", "name": "Cable Fly", "aliases": ["cable fly", "cable flye", "cable flyes", "cable crossover", "cable crossovers", "cable chest fly"], "primary_body_part": "chest", "secondary_body_parts": [], "equipment": "cable", "is_bodyweight": false },
+    { "id": "ex_push_up", "name": "Push-up", "aliases": ["push up", "push-up", "push ups", "push-ups", "pushup", "pushups"], "primary_body_part": "chest", "secondary_body_parts": ["triceps", "shoulders"], "equipment": "bodyweight", "is_bodyweight": true },
+
+    { "id": "ex_deadlift", "name": "Deadlift", "aliases": ["deadlift", "deadlifts", "conventional deadlift", "dl"], "primary_body_part": "back", "secondary_body_parts": ["legs", "glutes"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_pull_up", "name": "Pull-up", "aliases": ["pull up", "pull-up", "pull ups", "pull-ups", "pullup", "pullups", "chin up", "chin-up", "chin ups", "chin-ups", "chinup", "chinups"], "primary_body_part": "back", "secondary_body_parts": ["biceps"], "equipment": "bodyweight", "is_bodyweight": true },
+    { "id": "ex_lat_pulldown", "name": "Lat Pulldown", "aliases": ["lat pulldown", "lat pull down", "lat pulldowns", "pulldown", "pulldowns", "pull down"], "primary_body_part": "back", "secondary_body_parts": ["biceps"], "equipment": "cable", "is_bodyweight": false },
+    { "id": "ex_barbell_row", "name": "Barbell Row", "aliases": ["barbell row", "barbell rows", "bent over row", "bent-over row", "bent over rows", "bb row", "pendlay row"], "primary_body_part": "back", "secondary_body_parts": ["biceps"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_seated_cable_row", "name": "Seated Cable Row", "aliases": ["seated cable row", "seated row", "cable row", "seated rows", "cable rows", "low row"], "primary_body_part": "back", "secondary_body_parts": ["biceps"], "equipment": "cable", "is_bodyweight": false },
+    { "id": "ex_db_row", "name": "Single-arm Dumbbell Row", "aliases": ["db row", "dumbbell row", "one arm row", "one-arm row", "single arm row", "single-arm row", "one arm dumbbell row", "single arm dumbbell row"], "primary_body_part": "back", "secondary_body_parts": ["biceps"], "equipment": "dumbbell", "is_bodyweight": false },
+
+    { "id": "ex_overhead_press", "name": "Overhead Press", "aliases": ["overhead press", "ohp", "military press", "standing press", "barbell overhead press", "shoulder press barbell"], "primary_body_part": "shoulders", "secondary_body_parts": ["triceps"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_db_shoulder_press", "name": "Dumbbell Shoulder Press", "aliases": ["db shoulder press", "dumbbell shoulder press", "seated dumbbell press", "seated db press", "db ohp", "dumbbell overhead press"], "primary_body_part": "shoulders", "secondary_body_parts": ["triceps"], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_lateral_raise", "name": "Lateral Raise", "aliases": ["lateral raise", "lateral raises", "side raise", "side raises", "lat raise", "lat raises", "side lateral raise"], "primary_body_part": "shoulders", "secondary_body_parts": [], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_face_pull", "name": "Face Pull", "aliases": ["face pull", "face pulls", "facepull", "facepulls"], "primary_body_part": "shoulders", "secondary_body_parts": ["back"], "equipment": "cable", "is_bodyweight": false },
+
+    { "id": "ex_back_squat", "name": "Back Squat", "aliases": ["squat", "squats", "back squat", "back squats", "barbell squat", "barbell squats", "bb squat"], "primary_body_part": "legs", "secondary_body_parts": ["glutes"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_front_squat", "name": "Front Squat", "aliases": ["front squat", "front squats"], "primary_body_part": "legs", "secondary_body_parts": ["glutes", "core"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_leg_press", "name": "Leg Press", "aliases": ["leg press", "leg presses"], "primary_body_part": "legs", "secondary_body_parts": ["glutes"], "equipment": "machine", "is_bodyweight": false },
+    { "id": "ex_rdl", "name": "Romanian Deadlift", "aliases": ["romanian deadlift", "romanian deadlifts", "rdl", "rdls", "stiff leg deadlift", "stiff-leg deadlift"], "primary_body_part": "legs", "secondary_body_parts": ["glutes", "back"], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_leg_extension", "name": "Leg Extension", "aliases": ["leg extension", "leg extensions", "quad extension", "quad extensions"], "primary_body_part": "legs", "secondary_body_parts": [], "equipment": "machine", "is_bodyweight": false },
+    { "id": "ex_leg_curl", "name": "Leg Curl", "aliases": ["leg curl", "leg curls", "hamstring curl", "hamstring curls", "lying leg curl", "seated leg curl"], "primary_body_part": "legs", "secondary_body_parts": [], "equipment": "machine", "is_bodyweight": false },
+    { "id": "ex_bulgarian_split_squat", "name": "Bulgarian Split Squat", "aliases": ["bulgarian split squat", "bulgarian split squats", "split squat", "split squats", "bss"], "primary_body_part": "legs", "secondary_body_parts": ["glutes"], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_calf_raise", "name": "Calf Raise", "aliases": ["calf raise", "calf raises", "standing calf raise", "seated calf raise", "calves"], "primary_body_part": "legs", "secondary_body_parts": [], "equipment": "machine", "is_bodyweight": false },
+
+    { "id": "ex_hip_thrust", "name": "Hip Thrust", "aliases": ["hip thrust", "hip thrusts", "barbell hip thrust", "glute bridge", "glute bridges"], "primary_body_part": "glutes", "secondary_body_parts": ["legs"], "equipment": "barbell", "is_bodyweight": false },
+
+    { "id": "ex_barbell_curl", "name": "Barbell Curl", "aliases": ["barbell curl", "barbell curls", "bb curl", "bb curls", "ez bar curl", "ez curl"], "primary_body_part": "biceps", "secondary_body_parts": [], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_db_curl", "name": "Dumbbell Curl", "aliases": ["dumbbell curl", "dumbbell curls", "db curl", "db curls", "bicep curl", "bicep curls", "biceps curl", "biceps curls"], "primary_body_part": "biceps", "secondary_body_parts": [], "equipment": "dumbbell", "is_bodyweight": false },
+    { "id": "ex_hammer_curl", "name": "Hammer Curl", "aliases": ["hammer curl", "hammer curls"], "primary_body_part": "biceps", "secondary_body_parts": [], "equipment": "dumbbell", "is_bodyweight": false },
+
+    { "id": "ex_triceps_pushdown", "name": "Triceps Pushdown", "aliases": ["triceps pushdown", "tricep pushdown", "triceps pushdowns", "tricep pushdowns", "pushdown", "pushdowns", "rope pushdown", "cable pushdown"], "primary_body_part": "triceps", "secondary_body_parts": [], "equipment": "cable", "is_bodyweight": false },
+    { "id": "ex_skull_crusher", "name": "Skull Crusher", "aliases": ["skull crusher", "skull crushers", "lying triceps extension", "lying tricep extension"], "primary_body_part": "triceps", "secondary_body_parts": [], "equipment": "barbell", "is_bodyweight": false },
+    { "id": "ex_dip", "name": "Dip", "aliases": ["dip", "dips", "parallel bar dip", "parallel bar dips", "chest dip", "chest dips", "tricep dip", "tricep dips"], "primary_body_part": "triceps", "secondary_body_parts": ["chest", "shoulders"], "equipment": "bodyweight", "is_bodyweight": true },
+
+    { "id": "ex_hanging_leg_raise", "name": "Hanging Leg Raise", "aliases": ["hanging leg raise", "hanging leg raises", "leg raise", "leg raises", "hanging knee raise", "hanging knee raises"], "primary_body_part": "core", "secondary_body_parts": [], "equipment": "bodyweight", "is_bodyweight": true },
+    { "id": "ex_cable_crunch", "name": "Cable Crunch", "aliases": ["cable crunch", "cable crunches", "kneeling cable crunch"], "primary_body_part": "core", "secondary_body_parts": [], "equipment": "cable", "is_bodyweight": false }
+  ],
+  "ambiguous_aliases": {
+    "press": ["ex_bench_press", "ex_overhead_press", "ex_leg_press"],
+    "presses": ["ex_bench_press", "ex_overhead_press", "ex_leg_press"],
+    "shoulder press": ["ex_overhead_press", "ex_db_shoulder_press"],
+    "incline press": ["ex_incline_bench_press", "ex_incline_db_press"],
+    "row": ["ex_barbell_row", "ex_seated_cable_row", "ex_db_row"],
+    "rows": ["ex_barbell_row", "ex_seated_cable_row", "ex_db_row"],
+    "fly": ["ex_db_fly", "ex_incline_db_fly", "ex_cable_fly"],
+    "flye": ["ex_db_fly", "ex_incline_db_fly", "ex_cable_fly"],
+    "flyes": ["ex_db_fly", "ex_incline_db_fly", "ex_cable_fly"],
+    "flies": ["ex_db_fly", "ex_incline_db_fly", "ex_cable_fly"],
+    "curl": ["ex_db_curl", "ex_barbell_curl", "ex_leg_curl"],
+    "curls": ["ex_db_curl", "ex_barbell_curl", "ex_leg_curl"],
+    "extension": ["ex_leg_extension", "ex_skull_crusher"],
+    "extensions": ["ex_leg_extension", "ex_skull_crusher"],
+    "triceps extension": ["ex_skull_crusher", "ex_triceps_pushdown"],
+    "tricep extension": ["ex_skull_crusher", "ex_triceps_pushdown"],
+    "raise": ["ex_lateral_raise", "ex_calf_raise", "ex_hanging_leg_raise"],
+    "raises": ["ex_lateral_raise", "ex_calf_raise", "ex_hanging_leg_raise"]
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.local
+verification/*.png
+verification/
+testing/
+.env
+.env.*
+*.log
+coverage/
+playwright-report/
+test-results/
+*profile*/
+*export*.json

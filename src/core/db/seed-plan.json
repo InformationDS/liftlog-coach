@@ -1,0 +1,174 @@
+{
+  "version": "1.0",
+  "doc": "See 06_SEED_DATA.md. week: 0 = current Monday-start week, -1 = last week ... -7. weekday: 1 = Mon ... 7 = Sun. A session is generated only if its date is strictly before today. setGroup = [weight|null, unit, sets, reps, setType].",
+  "sessions": [
+    { "week": -7, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [55, "kg", 4, 8, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[50, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[35, "kg", 3, 8, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[25, "kg", 3, 12, "working"]] },
+      { "id": "ex_hanging_leg_raise", "sg": [[null, "kg", 3, 10, "working"]] } ] },
+    { "week": -7, "weekday": 2, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [90, "kg", 3, 5, "working"]] },
+      { "id": "ex_leg_press", "sg": [[140, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[40, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[60, "kg", 3, 15, "working"]] } ] },
+    { "week": -7, "weekday": 4, "feeling": "normal", "notes": null, "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[22.5, "kg", 3, 10, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[55, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 6, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[15, "kg", 3, 12, "working"]] },
+      { "id": "ex_db_curl", "sg": [[12.5, "kg", 3, 12, "working"]] } ] },
+    { "week": -7, "weekday": 6, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_rdl", "sg": [[70, "kg", 3, 8, "working"]] },
+      { "id": "ex_bulgarian_split_squat", "sg": [[16, "kg", 3, 10, "working"]] },
+      { "id": "ex_hip_thrust", "sg": [[80, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_extension", "sg": [[45, "kg", 3, 12, "working"]] } ] },
+
+    { "week": -6, "weekday": 1, "feeling": "normal", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [55, "kg", 4, 8, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[50, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[35, "kg", 3, 8, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[25, "kg", 3, 12, "working"]] },
+      { "id": "ex_hanging_leg_raise", "sg": [[null, "kg", 3, 10, "working"]] } ] },
+    { "week": -6, "weekday": 2, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [92.5, "kg", 3, 5, "working"]] },
+      { "id": "ex_leg_press", "sg": [[140, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[40, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[60, "kg", 3, 15, "working"]] } ] },
+    { "week": -6, "weekday": 4, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[22.5, "kg", 3, 10, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[57.5, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 7, "working"]] },
+      { "custom": "Landmine press", "sg": [[25, "kg", 3, 10, "working"]] },
+      { "id": "ex_db_curl", "sg": [[12.5, "kg", 3, 12, "working"]] } ] },
+    { "week": -6, "weekday": 6, "feeling": "normal", "notes": null, "exercises": [
+      { "id": "ex_rdl", "sg": [[72.5, "kg", 3, 8, "working"]] },
+      { "id": "ex_bulgarian_split_squat", "sg": [[16, "kg", 3, 10, "working"]] },
+      { "id": "ex_hip_thrust", "sg": [[85, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_extension", "sg": [[45, "kg", 3, 12, "working"]] } ] },
+
+    { "week": -5, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [57.5, "kg", 4, 8, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[52.5, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[37.5, "kg", 3, 8, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[25, "kg", 3, 12, "working"]] },
+      { "id": "ex_hanging_leg_raise", "sg": [[null, "kg", 3, 12, "working"]] } ] },
+    { "week": -5, "weekday": 2, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [95, "kg", 3, 5, "working"]] },
+      { "id": "ex_leg_press", "sg": [[150, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[42.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[60, "kg", 3, 15, "working"]] } ] },
+    { "week": -5, "weekday": 4, "feeling": "normal", "notes": "Short on time, skipped curls.", "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[24, "kg", 3, 10, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[57.5, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 7, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[15, "kg", 3, 12, "working"]] } ] },
+
+    { "week": -4, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [57.5, "kg", 4, 8, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[52.5, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[37.5, "kg", 3, 8, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[27.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_hanging_leg_raise", "sg": [[null, "kg", 3, 12, "working"]] } ] },
+    { "week": -4, "weekday": 2, "feeling": "good", "notes": "First time at 100!", "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [100, "kg", 3, 5, "working"]] },
+      { "id": "ex_leg_press", "sg": [[150, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[42.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[65, "kg", 3, 15, "working"]] } ] },
+    { "week": -4, "weekday": 4, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[24, "kg", 3, 10, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[60, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 8, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[17.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_db_curl", "sg": [[12.5, "kg", 3, 12, "working"]] } ] },
+    { "week": -4, "weekday": 6, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_rdl", "sg": [[75, "kg", 3, 8, "working"]] },
+      { "id": "ex_bulgarian_split_squat", "sg": [[18, "kg", 3, 10, "working"]] },
+      { "id": "ex_hip_thrust", "sg": [[90, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_extension", "sg": [[47.5, "kg", 3, 12, "working"]] } ] },
+
+    { "week": -3, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [60, "kg", 4, 8, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[55, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[37.5, "kg", 3, 8, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[27.5, "kg", 3, 12, "working"]] } ] },
+    { "week": -3, "weekday": 2, "feeling": "normal", "notes": null, "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [100, "kg", 2, 5, "working"], [100, "kg", 1, 4, "working"]] },
+      { "id": "ex_leg_press", "sg": [[150, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[42.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[65, "kg", 3, 15, "working"]] } ] },
+    { "week": -3, "weekday": 4, "feeling": "normal", "notes": null, "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[24, "kg", 3, 10, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[60, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 8, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[17.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_db_curl", "sg": [[14, "kg", 3, 10, "working"]] } ] },
+    { "week": -3, "weekday": 6, "feeling": "good", "notes": "Tried deadlifts again.", "exercises": [
+      { "id": "ex_deadlift", "sg": [[60, "kg", 1, 5, "warmup"], [100, "kg", 1, 3, "warmup"], [120, "kg", 1, 5, "working"]] },
+      { "id": "ex_rdl", "sg": [[75, "kg", 2, 8, "working"]] },
+      { "id": "ex_hip_thrust", "sg": [[95, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_extension", "sg": [[47.5, "kg", 3, 12, "working"]] } ] },
+
+    { "week": -2, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [60, "kg", 4, 8, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[55, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[40, "kg", 3, 6, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[27.5, "kg", 3, 12, "working"]] } ] },
+    { "week": -2, "weekday": 2, "feeling": "normal", "notes": "Knee a bit sore on the last set.", "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [100, "kg", 3, 5, "working"]] },
+      { "id": "ex_leg_press", "sg": [[150, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[45, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[65, "kg", 3, 15, "working"]] } ] },
+    { "week": -2, "weekday": 4, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[26, "kg", 3, 8, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[62.5, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 8, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[17.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_db_curl", "sg": [[14, "kg", 3, 10, "working"]] } ] },
+
+    { "week": -1, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [62.5, "kg", 4, 6, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[57.5, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[40, "kg", 3, 6, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[27.5, "kg", 3, 12, "working"]] } ] },
+    { "week": -1, "weekday": 2, "feeling": "bad", "notes": "Legs felt heavy.", "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [100, "kg", 1, 5, "working"], [100, "kg", 2, 4, "working"]] },
+      { "id": "ex_leg_press", "sg": [[150, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[45, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[65, "kg", 3, 15, "working"]] } ] },
+    { "week": -1, "weekday": 4, "feeling": "normal", "notes": "Hotel gym, plates in pounds.", "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[55, "lb", 3, 8, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[140, "lb", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 8, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[35, "lb", 3, 12, "working"]] },
+      { "id": "ex_db_curl", "sg": [[30, "lb", 3, 10, "working"]] } ] },
+    { "week": -1, "weekday": 6, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_rdl", "sg": [[80, "kg", 3, 8, "working"]] },
+      { "id": "ex_bulgarian_split_squat", "sg": [[18, "kg", 3, 10, "working"]] },
+      { "id": "ex_hip_thrust", "sg": [[100, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_extension", "sg": [[50, "kg", 3, 12, "working"]] } ] },
+
+    { "week": 0, "weekday": 1, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_bench_press", "sg": [[40, "kg", 1, 8, "warmup"], [62.5, "kg", 4, 7, "working"]] },
+      { "id": "ex_barbell_row", "sg": [[57.5, "kg", 4, 8, "working"]] },
+      { "id": "ex_overhead_press", "sg": [[40, "kg", 3, 7, "working"]] },
+      { "id": "ex_triceps_pushdown", "sg": [[27.5, "kg", 3, 12, "working"]] } ] },
+    { "week": 0, "weekday": 2, "feeling": "normal", "notes": null, "exercises": [
+      { "id": "ex_back_squat", "sg": [[60, "kg", 1, 5, "warmup"], [80, "kg", 1, 5, "warmup"], [100, "kg", 3, 4, "working"]] },
+      { "id": "ex_leg_press", "sg": [[150, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_curl", "sg": [[45, "kg", 3, 12, "working"]] },
+      { "id": "ex_calf_raise", "sg": [[65, "kg", 3, 15, "working"]] } ] },
+    { "week": 0, "weekday": 4, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_incline_db_press", "sg": [[26, "kg", 3, 8, "working"]] },
+      { "id": "ex_lat_pulldown", "sg": [[62.5, "kg", 3, 10, "working"]] },
+      { "id": "ex_pull_up", "sg": [[null, "kg", 3, 8, "working"]] },
+      { "id": "ex_cable_fly", "sg": [[17.5, "kg", 3, 12, "working"]] },
+      { "id": "ex_db_curl", "sg": [[14, "kg", 3, 10, "working"]] } ] },
+    { "week": 0, "weekday": 6, "feeling": "good", "notes": null, "exercises": [
+      { "id": "ex_rdl", "sg": [[80, "kg", 3, 8, "working"]] },
+      { "id": "ex_bulgarian_split_squat", "sg": [[20, "kg", 3, 10, "working"]] },
+      { "id": "ex_hip_thrust", "sg": [[100, "kg", 3, 10, "working"]] },
+      { "id": "ex_leg_extension", "sg": [[50, "kg", 3, 12, "working"]] } ] }
+  ]
+}
