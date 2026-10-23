@@ -2,6 +2,10 @@
 
 ## Decisions
 
+- 2026-10-23 — User accepted CP9 round2 locally and authorized syncing the accepted v2 P4/P1 changes, refreshing release indexes, committing, pushing and deploying Pages. v1, A4 and all experimental baselines stay unchanged. Two round2 regression files enter the public allowlist; original testing, private precheck and verification artifacts remain excluded. No real-model experiment is authorized in this publication turn.
+
+- 2026-10-23 — CP9 round2 local-only authorization: add v2 P4 knowledge/technique boundaries and explicit-unit P1 guidance without changing shared schema, matcher, softPain, P2 failure policy or v1 wire requests. adviceReply already dispatches through promptSets[ruleVersion].advice; only its v2 builder is replaced. Actual fake-HTTP direct/resume/retry tests verify this wiring. Knowledge-only DOMS keeps the existing card headings; bullets under What to try are instructed to explain facts rather than prescribe actions. See verification/cp9-round2/REPORT.md. Existing experimental evidence remains untouched; no real model run or publication.
+
 - 2026-10-23 — User accepted local CP9 and authorized syncing the three v2 changes, updating the release whitelist/manifest, committing, pushing and deploying Pages. A4 must keep its current policy. Original testing evidence and local verification remain private; the public CP9 summary is delivery/CP9_RELEASE_NOTES.md. This publication does not authorize or run a new real-model experiment. Earlier CP9 entries below describe the pre-publication checkpoint.
 
 - 2026-10-23 — CP9 user authorization supersedes the CP7 shared-P1/identical-regex baseline only for v2 MED-01b, the P2 DOMS allowance and complete P1 clarification objects. Frozen prototype-docs stays unchanged; versioned prompt deltas are documented in verification/CP9-prompts.md and intent-kb/CHANGELOG.md. Schema, shared softPain, riskCheck failure policy, v1 prompt output and dependency/lockfile baselines are preserved. Existing v2 baseline assertions were updated only where the authorized behavior changed; all original v1 regex assertions remain.

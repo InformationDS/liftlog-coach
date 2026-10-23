@@ -76,9 +76,10 @@ describe('P2 decisions and state table',()=>{
     const r=await handleMessage('Bench 60kg 3x8',ctx);expect(r.messages[0].trace.path).toContain('no_key: stop');expect(r.statePatch).toEqual({});expect(h.fetcher).not.toHaveBeenCalled();
   });
 });
-it('prompt sets share P3/P4, v2 supplies its P1 reminder and tagged P2/current text',()=>{
+it('prompt sets share P3, v2 supplies its P1/P4 and tagged P2/current text',()=>{
   expect(promptSets.v1.riskCheck).toBeNull();expect(promptSets.v2.riskCheck).toBe(buildRiskCheck);
-  for(const key of ['trendInterpretation','advice'] as const)expect(promptSets.v1[key]).toBe(promptSets.v2[key]);
+  expect(promptSets.v1.trendInterpretation).toBe(promptSets.v2.trendInterpretation);
+  expect(promptSets.v1.advice).not.toBe(promptSets.v2.advice);
   expect(promptSets.v1.classify).not.toBe(promptSets.v2.classify);
   const p=buildRiskCheck('a""""b');expect(p.messages).toHaveLength(2);expect(p.messages[1].content).toBe('MESSAGE:\n"""\na\'\'b\n"""');
   expect(p.messages[0].content).toContain(loadLlmSection('references/safety-rules.md','risk-check'));expect(p.messages[0].content).not.toContain('Code contract');

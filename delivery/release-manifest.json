@@ -18,13 +18,13 @@
     },
     {
       "path": "NOTES.md",
-      "bytes": 29346,
-      "sha256": "55d73540e1a354ece3c8d3fb492707050f814fa26af08aef7afdacfdc98901a5"
+      "bytes": 30423,
+      "sha256": "2739e46e323cbb731bffa0fa2eca6a2d4197f52750009cb3cab17d0196c40f64"
     },
     {
       "path": "README.md",
-      "bytes": 9287,
-      "sha256": "90a9cc0825f5eed21efea8309f2ddc4730b1f38c6372fd2d53fcc17098ed3438"
+      "bytes": 9750,
+      "sha256": "40d449f22829bb57294f42a1195f21d6cbcb85ad6ebf5c2f6ecc45e26aa589c1"
     },
     {
       "path": "delivery/ASSIGNMENT_TEST_KIT.md",
@@ -33,13 +33,13 @@
     },
     {
       "path": "delivery/CP9_RELEASE_NOTES.md",
-      "bytes": 3686,
-      "sha256": "2d5a4d2fef8b485f440910d7297d13b089ef9d4d4d2254fa61d98d52e426c198"
+      "bytes": 5627,
+      "sha256": "c8f48127b539b0a56bdb732854abf6ff4f0ac6767be87ba02b7f4c8c11363035"
     },
     {
       "path": "delivery/RELEASE_PLAN.md",
-      "bytes": 3370,
-      "sha256": "ef28ca0706f4b90eac3502582872d40cc2e2a739aa6e1604da20d2b6d21db5d3"
+      "bytes": 3534,
+      "sha256": "21b652d9e1537f9d535f1d79353ba1f79240c9b95a70dc22da6fd67b5c1b58d2"
     },
     {
       "path": "delivery/SCREENSHOT_CHECKLIST.md",
@@ -93,8 +93,8 @@
     },
     {
       "path": "intent-kb/CHANGELOG.md",
-      "bytes": 3488,
-      "sha256": "0f55c56ec614f634ecfa2a50564d6dc338229d0ab80664cdb71c48ad55c1e564"
+      "bytes": 4966,
+      "sha256": "17bf460570796d435516095b6d5d98f1b86df3e20650a766fd2072d533e5d184"
     },
     {
       "path": "intent-kb/README.md",
@@ -303,13 +303,13 @@
     },
     {
       "path": "src/core/prompts/builder.ts",
-      "bytes": 5711,
-      "sha256": "35a8bfe47647dd6b59d452df4560797d25fafc79fcc9db9362cab4c737266d04"
+      "bytes": 5948,
+      "sha256": "ddee140ca0c192d4aae89200d4d5fc5f722c1a790b35178c58c7a221284703eb"
     },
     {
       "path": "src/core/prompts/templates.ts",
-      "bytes": 6069,
-      "sha256": "f6465acc8e815785840c68c4dda244b1f57eb0717d49912768fd3d470ffdd601"
+      "bytes": 8867,
+      "sha256": "b7d7c3094cbec33854a65c4449472746775f7c0318b045bb2e1c7ab25c25f546"
     },
     {
       "path": "src/core/safety/regexRules.ts",
@@ -452,6 +452,16 @@
       "sha256": "ca65d82b51fb9b4ce3b5f4f537a05a26dd31918759400078c43df7692c5e212f"
     },
     {
+      "path": "src/test/cp9Round2.test.ts",
+      "bytes": 9799,
+      "sha256": "3bcd10ce5aa986a7a31f3fdaf6496f6fdbff8d7c05107aa428174c552824f07b"
+    },
+    {
+      "path": "src/test/cp9Round2Preservation.test.ts",
+      "bytes": 2533,
+      "sha256": "2aa2c2a69270639ccce9fac6c14fcba8fbc65fab24d55f499107828d16eb73fd"
+    },
+    {
       "path": "src/test/dataPrep.test.ts",
       "bytes": 8146,
       "sha256": "70b1a9459ba0898edc247b129a1422d4b27b5b27073c2a4babe1263eff63a361"
@@ -523,8 +533,8 @@
     },
     {
       "path": "src/test/riskCheck.test.ts",
-      "bytes": 8888,
-      "sha256": "7dcdcee31b0e9351ad629aab6c10b4a9d5cc7f71bc8041b5712c38e15154aee6"
+      "bytes": 8913,
+      "sha256": "b0ba43e04808d7e27c6c7df73851f1b36a3a2c7baec84734c1330969639b4966"
     },
     {
       "path": "src/test/schemas.test.ts",

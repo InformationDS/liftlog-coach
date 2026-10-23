@@ -49,12 +49,12 @@ export function cleanInterpretation(text: string): string {
   return (plain.match(/.+?(?:[.!?](?=\s|$)|$)/gs) ?? []).slice(0, 4).join('').trim();
 }
 
-import { ADVICE_SYSTEM, ADVICE_DATA_STRUCTURE, ADVICE_INSUFFICIENT_STRUCTURE, ADVICE_GENERAL_STRUCTURE } from './templates';
+import { ADVICE_SYSTEM, ADVICE_SYSTEM_V2, ADVICE_DATA_STRUCTURE, ADVICE_INSUFFICIENT_STRUCTURE, ADVICE_GENERAL_STRUCTURE } from './templates';
 import type { AdviceData } from '../intents/advice/dataPrep';
-export function buildAdvice(data: AdviceData, adviceType: string, original: string, discomfort: boolean): TextRequest {
+export function buildAdvice(data: AdviceData, adviceType: string, original: string, discomfort: boolean, version: 'v1' | 'v2' = 'v1'): TextRequest {
   const rules = {data: 'Base your answer on the TRAINING_DATA block. Every number or date you mention about the user must appear in that block exactly as written. In "Where you are", cite at least two specific sessions by date and value.', insufficient: "You have no personal data for this question. Do not mention or guess anything about the user's own training history.", general: "This is a general training question. Do not mention or guess anything about the user's own training history."};
   const structure = {data: ADVICE_DATA_STRUCTURE, insufficient: ADVICE_INSUFFICIENT_STRUCTURE, general: ADVICE_GENERAL_STRUCTURE}[data.mode].replace('{target_label}', cleanQuotes(data.targetLabel));
-  const system = ADVICE_SYSTEM.replace('{mode_data_rule}',rules[data.mode]).replace('{mode_structure}',structure);
+  const system = (version === 'v2' ? ADVICE_SYSTEM_V2 : ADVICE_SYSTEM).replace('{mode_data_rule}',rules[data.mode]).replace('{mode_structure}',structure);
   const user = `ADVICE_TYPE: ${adviceType}\nTARGET: ${cleanQuotes(data.targetLabel)}\nMENTIONS_DISCOMFORT: ${discomfort}\n\n${data.mode === 'data' ? `TRAINING_DATA:\n${JSON.stringify(cleanData(data.dataJson),null,2)}\n\n` : ''}USER_QUESTION:\n"""\n${cleanQuotes(original)}\n"""`;
   return {messages:[{role:'system',content:system},{role:'user',content:user}],temperature:0.3,maxTokens:700,expectJson:false};
 }
@@ -65,4 +65,5 @@ export function buildRiskCheck(text: string) {
     {role: 'user' as const, content: `MESSAGE:\n"""\n${cleanQuotes(text)}\n"""`}], temperature: 0, maxTokens: 400, expectJson: true as const, schema: riskCheckSchema};
 }
 const v1 = {classify: buildClassify, riskCheck: null, trendInterpretation: buildTrend, advice: buildAdvice};
-export const promptSets = {v1, v2: {...v1, classify: (text: string, pendingDraft: RecordSlots | null, now: Date) => buildClassify(text, pendingDraft, now, 'v2'), riskCheck: buildRiskCheck}};
+export const promptSets = {v1, v2: {...v1, classify: (text: string, pendingDraft: RecordSlots | null, now: Date) => buildClassify(text, pendingDraft, now, 'v2'), riskCheck: buildRiskCheck,
+  advice: (data: AdviceData, adviceType: string, original: string, discomfort: boolean) => buildAdvice(data, adviceType, original, discomfort, 'v2')}};

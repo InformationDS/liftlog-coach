@@ -90,6 +90,8 @@ src/test/cp4Fixtures.ts
 src/test/cp7Pipeline.test.ts
 src/test/cp9.test.ts
 src/test/cp9Preservation.test.ts
+src/test/cp9Round2.test.ts
+src/test/cp9Round2Preservation.test.ts
 src/test/dataPrep.test.ts
 src/test/exerciseMatcher.test.ts
 src/test/fixtures/llm/.gitkeep
