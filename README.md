@@ -23,7 +23,7 @@ and open [the build preview](http://127.0.0.1:4173/).
 MiMo is the selected acceptance provider. Obtain your own API access through the
 provider; this project does not supply a Key or promise free access.
 
-1. Open **Settings → AI model**. Set API address to `https://api.xiaomimo.com/v1`
+1. Open **Settings → AI model**. Set API address to `https://api.xiaomimimo.com/v1`
    and model to `mimo-v2.6-flash`. These are defaults for new settings.
    Existing settings are preserved. MiMo uses the editable fields; the other
    provider preset buttons are not a MiMo selector.

@@ -13,9 +13,9 @@ const settingsSchema = z.object({
   defaultUnit: z.enum(['kg', 'lb']), ruleVersion: z.enum(['v1', 'v2']), showDebug: z.boolean(),
 });
 export type Settings = z.infer<typeof settingsSchema>;
-// User-selected default after browser P6 verification on 2026-10-22; presets stay intact.
+// User-selected MiMo endpoint; valid saved configurations are preserved.
 export const DEFAULT_SETTINGS: Readonly<Settings> = Object.freeze({
-  apiBaseUrl: 'https://api.xiaomimo.com/v1', apiKey: '', model: 'mimo-v2.6-flash',
+  apiBaseUrl: 'https://api.xiaomimimo.com/v1', apiKey: '', model: 'mimo-v2.6-flash',
   defaultUnit: 'kg', ruleVersion: INITIAL_RULE_VERSION, showDebug: true,
 });
 export function readSettings(storage: Pick<Storage, 'getItem'> = localStorage): Settings {

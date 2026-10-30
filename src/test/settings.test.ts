@@ -3,7 +3,7 @@ import { applyPreset, DEFAULT_SETTINGS, normalizeApiBaseUrl, PROVIDER_PRESETS, r
 
 beforeEach(() => localStorage.clear());
 it('uses the user-verified MiMo default and retains the exact documented provider presets', () => {
-  expect(readSettings()).toEqual({apiBaseUrl: 'https://api.xiaomimo.com/v1', apiKey: '', model: 'mimo-v2.6-flash', defaultUnit: 'kg', ruleVersion: 'v2', showDebug: true});
+  expect(readSettings()).toEqual({apiBaseUrl: 'https://api.xiaomimimo.com/v1', apiKey: '', model: 'mimo-v2.6-flash', defaultUnit: 'kg', ruleVersion: 'v2', showDebug: true});
   expect(PROVIDER_PRESETS).toEqual([
     {label: 'OpenAI', apiBaseUrl: 'https://api.openai.com/v1', model: 'gpt-4o-mini'},
     {label: 'Google Gemini', apiBaseUrl: 'https://generativelanguage.googleapis.com/v1beta/openai', model: 'gemini-2.5-flash'},

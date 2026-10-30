@@ -18,13 +18,13 @@
     },
     {
       "path": "NOTES.md",
-      "bytes": 30423,
-      "sha256": "2739e46e323cbb731bffa0fa2eca6a2d4197f52750009cb3cab17d0196c40f64"
+      "bytes": 30667,
+      "sha256": "cd65b265760430bdedcfe4d584b4c20eb38dc781a271de71d6b34b96880319cf"
     },
     {
       "path": "README.md",
-      "bytes": 9750,
-      "sha256": "40d449f22829bb57294f42a1195f21d6cbcb85ad6ebf5c2f6ecc45e26aa589c1"
+      "bytes": 9752,
+      "sha256": "134a95b0a0b6ae5e2ee90b64e408f1bdb768784f1cfb89d9501587f54e8ae30a"
     },
     {
       "path": "delivery/ASSIGNMENT_TEST_KIT.md",
@@ -328,8 +328,8 @@
     },
     {
       "path": "src/core/settings/settings.ts",
-      "bytes": 2106,
-      "sha256": "6a39a783f7a3e7349aa2b3a20a8b9b998519885e2fa39a1f1d6fbccf07b5ab11"
+      "bytes": 2091,
+      "sha256": "ec1dcd219ea474ed6afe274eaeb94982c8ceea511b42868e2f7a1878f36eee89"
     },
     {
       "path": "src/core/time/resolve.ts",
@@ -553,8 +553,8 @@
     },
     {
       "path": "src/test/settings.test.ts",
-      "bytes": 3149,
-      "sha256": "07de0ab9300b3a2a51b4ce1e189193959b7b87c61736029b3f9bf92ff66dfd8f"
+      "bytes": 3151,
+      "sha256": "c014f733b8ccc9494e8ed37e00697a7db05f53b222a3211a17e259713b5924dc"
     },
     {
       "path": "src/test/setup.ts",
